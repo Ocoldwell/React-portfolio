@@ -1,25 +1,6 @@
 import React, { useState } from "react";
-import { LinkContainer } from "react-router-dom";
-import { FaAlignRight } from "react-icons/fa";
-import styled from 'styled-components';
-
-const Nav = styled.nav`
-  width: 100%;
-  background-color: transparent;
-  display: flex;
-  justify-content: flex-end;
-  z-index: 4000;
-  position: fixed;
-  top: 0;
-  right: 20px;
-`
-const NavLinksContainer = styled.ul`
-  list-style-type: none;
-`
-
-const Button = styled.button`
-
-`
+import { Link } from "react-router-dom";
+import { Nav, NavLinksContainer, Hamburger, NavButton } from "./style.js";
 
 const Navigation = () => {
   const [toggle, setToggle] = useState(false);
@@ -29,16 +10,21 @@ const Navigation = () => {
   };
 
   return (
-    <Nav >
-      <button onClick={handleToggle}>
-        <FaAlignRight />
-      </button>
-      <NavLinksContainer>
-        <li href="#">Ollie Coldwell</li>
-        <li href="#">About Me</li>
-        <li href="#">Projects</li>
-        <li href="#">Contact</li>
-      </NavLinksContainer>
+    <Nav>
+      <NavButton onClick={handleToggle} type="checkbox" id="nav-button" />
+      <label id="hamburger-icon" for="nav-button">
+        <Hamburger />
+        <Hamburger />
+        <Hamburger />
+      </label>
+      {toggle ? (
+        <NavLinksContainer>
+          <Link to="/">Ollie Coldwell</Link>
+          <Link to="/aboutme">About Me</Link>
+          <Link to="/projects">Projects</Link>
+          <Link to="/contact">Contact</Link>
+        </NavLinksContainer>
+      ) : null}
     </Nav>
   );
 };
