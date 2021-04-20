@@ -12,7 +12,7 @@ const Navigation = () => {
   return (
     <Nav>
       <NavButton onClick={handleToggle} type="checkbox" id="nav-button" />
-      <label id="hamburger-icon" for="nav-button">
+      <label id="hamburger-icon" htmlFor="nav-button">
         <Hamburger />
         <Hamburger />
         <Hamburger />
