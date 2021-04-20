@@ -1,9 +1,9 @@
 import React from 'react'
 import PageContainer from "../../shared/PageContainer";
 import {HeaderContainerMain, HeaderContainerSub} from "../../shared/HeaderContainer";
-import {HeaderMain, HeaderSub} from "../../shared/Header";
+import {HeaderMain} from "../../shared/Header";
 
-const Contact = () => {
+const Contact = (props) => {
   return (
     <PageContainer >
     <HeaderContainerMain>

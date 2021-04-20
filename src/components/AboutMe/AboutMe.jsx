@@ -1,16 +1,17 @@
 import React from 'react'
 import PageContainer from "../../shared/PageContainer";
-import {HeaderContainerMain, HeaderContainerSub} from "../../shared/HeaderContainer";
+import {RedContainerMain, HeaderContainerSub} from "../../shared/HeaderContainer";
 import {HeaderMain, HeaderSub} from "../../shared/Header";
+
 
 const AboutMe = () => {
   return (
     <PageContainer >
-    <HeaderContainerMain>
+    <RedContainerMain >
       <HeaderMain>
         About
       </HeaderMain>
-    </HeaderContainerMain>
+    </RedContainerMain>
     <HeaderContainerSub>
       <HeaderSub>
         Me
