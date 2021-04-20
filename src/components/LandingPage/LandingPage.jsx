@@ -8,7 +8,7 @@ const LandingPage = () => {
   return (
     <PageContainer>
       <HeaderContainerMain>
-        <HeaderMain>
+        <HeaderMain >
           Ollie
         </HeaderMain>
       </HeaderContainerMain>

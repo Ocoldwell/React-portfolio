@@ -1,12 +1,12 @@
 import React from "react";
 import PageContainer from "../../shared/PageContainer";
 import {
-  HeaderContainerMain,
+  BlueContainerMain,
   HeaderContainerSub,
 } from "../../shared/HeaderContainer";
 import { HeaderMain } from "../../shared/Header";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import styles from "./projects.css";
+import "./projects.css";
 import { Carousel } from "react-responsive-carousel";
 import morse from "../../assets/images/Morse-Code-Translator.png";
 import calculator from "../../assets/images/Calculator.png";
@@ -14,9 +14,9 @@ import ruby from "../../assets/images/Ruby's-text-adventure.png";
 const Projects = () => {
   return (
     <PageContainer>
-      <HeaderContainerMain>
+      <BlueContainerMain>
         <HeaderMain>Projects</HeaderMain>
-      </HeaderContainerMain>
+      </BlueContainerMain>
       <HeaderContainerSub>
         <Carousel
           showArrows={true}
