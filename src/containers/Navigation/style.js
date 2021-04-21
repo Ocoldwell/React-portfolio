@@ -20,8 +20,11 @@ export const Hamburger = styled.span`
   margin: 4px;
   height: 9px;
   width: 40px;
-  background: black;
+  background: white;
   border-radius: 9px;
+  :hover {
+    color:black
+  }
 `;
 export const NavButton = styled.input.attrs((props) => ({
   type: props.type || "input",
@@ -37,5 +40,6 @@ export const NavButton = styled.input.attrs((props) => ({
     ~ #hamburger-icon span:nth-child(3) {
       transform: rotate(-135deg) translate(3px);
     }
+  }
   }
 `;
