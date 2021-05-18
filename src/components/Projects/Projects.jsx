@@ -32,7 +32,7 @@ const Projects = () => {
           </div>
           <div>
             <img src={calculator} alt="Calculator Project" />
-            <p className="legend">Portfolio MK1</p>
+            <p className="legend">Calculator Project</p>
           </div>
           <div>
             <img src={ruby} alt="Calculator Project" />

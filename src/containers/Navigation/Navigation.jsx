@@ -1,22 +1,21 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { Nav, NavLinksContainer, Hamburger, NavButton } from "./style.js";
+import { Nav, NavLinksContainer } from "./style.js";
+import Burger from '@animated-burgers/burger-rotate';
+import '@animated-burgers/burger-rotate/dist/styles.css'
+
 
 const Navigation = () => {
   const [toggle, setToggle] = useState(false);
 
-  const handleToggle = () => {
+  const handleToggle = (e) => {
+    toggle ? e.target.classList.remove('open'): e.target.classList.add('open')
     setToggle(!toggle);
   };
 
   return (
     <Nav>
-      <NavButton onClick={handleToggle} type="checkbox" id="nav-button" />
-      <label id="hamburger-icon" htmlFor="nav-button">
-        <Hamburger />
-        <Hamburger />
-        <Hamburger />
-      </label>
+      <Burger onClick={handleToggle}/>
       {toggle ? (
         <NavLinksContainer>
           <Link to="/">Ollie Coldwell</Link>
