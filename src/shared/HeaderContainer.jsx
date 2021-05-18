@@ -11,6 +11,8 @@ export const HeaderContainerMain = styled.div`
 export const HeaderContainerSub = styled.div`
   height: 50%;
   width: 100%;
+  display: flex;
+  justify-content: center;
   position: relative;
 `
 
