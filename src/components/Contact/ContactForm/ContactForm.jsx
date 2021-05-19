@@ -4,12 +4,12 @@ import styles from "./ContactForm.module.css";
 const ContactForm = () => {
   return (
     <form className={styles.contactForm} method="POST">
-      <div className="form-group">
-        <label htmlFor="name">Name</label>
+      <div className="formGroup">
+        <label htmlFor="name" className={styles.formLabel}>Name</label>
         <input type="text" className="form-control" />
       </div>
       <div className="form-group">
-        <label htmlFor="exampleInputEmail1">Email address</label>
+        <label htmlFor="exampleInputEmail1"className={styles.formLabel}>Email address</label>
         <input
           type="email"
           className="form-control"
@@ -17,7 +17,7 @@ const ContactForm = () => {
         />
       </div>
       <div className="form-group">
-        <label htmlFor="message">Message</label>
+        <label htmlFor="message" className={styles.formLabel}>Message</label>
         <textarea className="form-control" rows="5"></textarea>
       </div>
       <button type="submit" className="btn btn-primary">
