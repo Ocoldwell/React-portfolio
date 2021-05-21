@@ -1,25 +1,20 @@
 import React, { useEffect, useRef } from "react";
-import * as typeformEmbed from "@typeform/embed";
+import {createPopover} from '@typeform/embed';
+import "@typeform/embed/build/css/popover.css";
 
-const TypeformWidget = ({
-  link = "https://n98f2afvvv9.typeform.com/to/CuHGv6hX",
-  hideFooter = true,
-  hideHeaders = true,
-  opacity = 90,
-}) => {
-  const elementRef = useRef(null);
+const TypeformWidget = () => {
+  const container = useRef();
+  const options = {
+    container: container.current,
+    hideFooter: true,
+    hideHeaders: true,
+  }
   useEffect(() => {
-    typeformEmbed.createPopover(elementRef.current, link, {
-      hideFooter,
-      hideHeaders,
-      opacity,
-    });
-  }, [link]);
+    createPopover("CuHGv6hX", options)
+  }, [])
+
   return (
-    <div
-      ref={elementRef}
-      style={{ width: "100%", height: "100%", flex: "1 1 auto" }}
-    ></div>
+    <div ref={container} />
   );
 };
 
