@@ -4,13 +4,13 @@ import "@typeform/embed/build/css/popover.css";
 
 const TypeformWidget = () => {
   const container = useRef();
-  const options = {
+  
+  useEffect(() => {
+    createPopover("CuHGv6hX", {
     container: container.current,
     hideFooter: true,
     hideHeaders: true,
-  }
-  useEffect(() => {
-    createPopover("CuHGv6hX", options)
+  })
   }, [])
 
   return (
