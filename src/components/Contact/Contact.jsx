@@ -5,7 +5,7 @@ import {
   HeaderContainerSub,
 } from "../../shared/HeaderContainer";
 import { HeaderMain } from "../../shared/Header";
-import  TypeformWidget  from "./TypeformWidget";
+import TypeformWidget from "./TypeformWidget";
 
 const Contact = (props) => {
   return (
@@ -14,7 +14,7 @@ const Contact = (props) => {
         <HeaderMain>Contact</HeaderMain>
       </HeaderContainerMain>
       <HeaderContainerSub>
-        <TypeformWidget/>
+        <TypeformWidget />
       </HeaderContainerSub>
     </PageContainer>
   );
