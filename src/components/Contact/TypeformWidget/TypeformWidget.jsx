@@ -10,6 +10,8 @@ const TypeformWidget = () => {
       container: container.current,
       hideFooter: true,
       hideHeaders: true,
+      opacity: 90,
+      tooltip: "Send me a message here"
     });
   }, []);
 
