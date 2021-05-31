@@ -4,8 +4,6 @@ export const Nav = styled.nav`
   width: 100%;
   background-color: transparent;
   display: flex;
-  justify-content: flex-end;
-  z-index: 4000;
   position: fixed;
   top: 0;
   right: 20px;

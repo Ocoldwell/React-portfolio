@@ -6,16 +6,16 @@ import '@animated-burgers/burger-rotate/dist/styles.css'
 
 
 const Navigation = () => {
-  const [toggle, setToggle] = useState(false);
+  // const [toggle, setToggle] = useState(false);
 
-  const handleToggle = (e) => {
-    toggle ? e.target.classList.remove('open'): e.target.classList.add('open')
-    setToggle(!toggle);
-  };
+  // const handleToggle = (e) => {
+  //   toggle ? e.target.classList.remove('open'): e.target.classList.add('open')
+  //   setToggle(!toggle);
+  // };
 
   return (
     <Nav>
-      <Burger onClick={handleToggle}/>
+      {/* <Burger onClick={handleToggle}/>
       {toggle ? (
         <NavLinksContainer>
           <Link to="/">Ollie Coldwell</Link>
@@ -23,7 +23,7 @@ const Navigation = () => {
           <Link to="/projects">Projects</Link>
           <Link to="/contact">Contact</Link>
         </NavLinksContainer>
-      ) : null}
+      ) : null} */}
     </Nav>
   );
 };
