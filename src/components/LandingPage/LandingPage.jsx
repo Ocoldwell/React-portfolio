@@ -10,10 +10,10 @@ const LandingPage = () => {
   return (
     <PageContainer>
       <HeaderContainerMain>
-        <HeaderMain>Ollie</HeaderMain>
+        <HeaderMain>Hi, I'm Ollie.</HeaderMain>
       </HeaderContainerMain>
       <HeaderContainerSub>
-        <HeaderSub>Coldwell<span>.</span></HeaderSub>
+        <HeaderSub>I'm a Web Developer</HeaderSub>
       </HeaderContainerSub>
     </PageContainer>
   );

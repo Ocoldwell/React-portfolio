@@ -1,5 +1,4 @@
 import LandingPage from "./components/LandingPage";
-// import AboutMe from "./components/AboutMe";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact/";
 import Navigation from "./containers/Navigation/Navigation";
