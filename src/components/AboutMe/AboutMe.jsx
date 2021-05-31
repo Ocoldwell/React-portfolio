@@ -13,7 +13,7 @@ const AboutMe = () => {
         <HeaderMain>About</HeaderMain>
       </RedContainerMain>
       <HeaderContainerSub>
-        <HeaderSub>Me</HeaderSub>
+        <HeaderSub>Me<span>.</span></HeaderSub>
       </HeaderContainerSub>
     </PageContainer>
   );

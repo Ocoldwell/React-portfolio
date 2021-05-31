@@ -1,6 +1,5 @@
-import { Route, Switch } from "react-router-dom";
 import LandingPage from "./components/LandingPage";
-import AboutMe from "./components/AboutMe";
+// import AboutMe from "./components/AboutMe";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact/";
 import Navigation from "./containers/Navigation/Navigation";
@@ -16,12 +15,9 @@ const App = () => {
     <div className="App">
       <GlobalStyle />
       <Navigation />
-      <Switch>
-        <Route path="/aboutme" component={AboutMe} />
-        <Route path="/projects" component={Projects} />
-        <Route path="/contact" component={Contact} />
-        <Route path="/" component={LandingPage} />
-      </Switch>
+      <LandingPage/>
+      <Projects />
+      <Contact />
     </div>
   );
 };

@@ -13,7 +13,7 @@ const LandingPage = () => {
         <HeaderMain>Ollie</HeaderMain>
       </HeaderContainerMain>
       <HeaderContainerSub>
-        <HeaderSub>Coldwell</HeaderSub>
+        <HeaderSub>Coldwell<span>.</span></HeaderSub>
       </HeaderContainerSub>
     </PageContainer>
   );
